@@ -11,6 +11,9 @@ export const StNavbarContainer = styled.nav`
     text-transform: uppercase;
     font-weight: 500;
   }
+  @media (max-width: 800px) {
+    min-height: 80px;
+  }
 `;
 
 export const StNavbarSlideToggleAnimation = styled.div`
@@ -65,12 +68,12 @@ export const StNavbarSlide = styled.ul<{isOpen: boolean}>`
   background-color: #4e4cd5;
   z-index: 3;
   & svg {
-    position: absolute;
     top: 0px;
     right: 0px;
     margin: 20px;
     font-size: 3rem;
     cursor: pointer;
+    position: absolute;
   }
   & footer {
     width: 100%;
@@ -84,6 +87,15 @@ export const StNavbarSlide = styled.ul<{isOpen: boolean}>`
   & a {
     align-self: center;
   }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    & footer {
+      left: 10px;
+      bottom: 5vh;
+      font-size: 0.8rem;
+    }
+  }
 `;
 
 export const StNavbarSlideItem = styled.li`
@@ -92,10 +104,10 @@ export const StNavbarSlideItem = styled.li`
   margin: 20px auto;
   cursor: pointer;
   font-size: 1.2rem;
-  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
   transition: all 0.2s linear;
   background-color: #6361e8;
   :hover {

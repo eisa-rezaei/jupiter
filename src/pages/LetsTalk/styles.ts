@@ -7,6 +7,9 @@ export const StLetsTalkContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 export const StLetsTalkPartsContainer = styled.article`
@@ -33,6 +36,11 @@ export const StLetsTalkPartsContainer = styled.article`
     & svg {
       cursor: pointer;
     }
+  }
+  @media (max-width: 800px) {
+    width: 100%;
+    min-height: 500px;
+    padding: 4vh 6vw;
   }
 `;
 
@@ -107,4 +115,7 @@ export const StLetsTalkBgSVG = styled.div`
   right: 40px;
   z-index: 1;
   color: #f0f0f0;
+  @media (max-width: 800px) {
+    font-size: 8rem;
+  }
 `;

@@ -14,9 +14,17 @@ export const StRecentWorksHeadLine = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  & img {
-    width: 700px;
+  & > img {
+    width: 50vw;
     height: 350px;
+  }
+  @media (max-width: 800px) {
+    padding: 0 4vw;
+    flex-direction: column-reverse;
+    & img {
+      width: 100%;
+      height: 350px;
+    }
   }
 `;
 export const StRecentWorksHeadLineText = styled.aside`
@@ -31,8 +39,11 @@ export const StRecentWorksHeadLineText = styled.aside`
     font-weight: 500;
   }
   & p {
-    padding-right: 15vw;
+    padding-right: 10vw;
     line-height: 30px;
+  }
+  @media (max-width: 800px) {
+    justify-content: flex-start;
   }
 `;
 
@@ -43,6 +54,14 @@ export const StRecentWorksOptions = styled.ul`
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+  @media (max-width: 800px) {
+    height: auto;
+    margin-top: 0;
+    padding: 0 4vw;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
 `;
 export const StRecentWorksOptionsItem = styled.li`
   width: 300px;
@@ -56,26 +75,10 @@ export const StRecentWorksOptionsItem = styled.li`
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   cursor: pointer;
-
   :hover {
     border: 2px solid #4e4cd5;
     border-left: none;
     box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.4);
-  }
-
-  & span {
-    width: 70px;
-    height: 70px;
-    color: #fff;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    padding: 10px;
-    font-size: 3.5vmax;
-    background-color: #4e4cd5;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
   }
   & h1 {
     font-size: 1.7vmax;
@@ -83,6 +86,30 @@ export const StRecentWorksOptionsItem = styled.li`
   }
   & p {
     font-size: 0.9rem;
+  }
+  @media (max-width: 800px) {
+    margin: 40px auto;
+  }
+`;
+
+export const StRecentWorksOptionsItemIcon = styled.div`
+  width: 70px;
+  height: 70px;
+  top: 0;
+  left: 50%;
+  padding: 10px;
+  font-size: 3.5vmax;
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  position: absolute;
+  transition: all 0.3s linear;
+  background-color: #4e4cd5;
+  transform: translate(-50%, -50%);
+  @media (max-width: 800px) {
+    top: -10%;
+    margin: 20px auto;
+    font-size: 2.4rem;
   }
 `;
 
@@ -99,15 +126,25 @@ export const StRecentWorksJobList = styled.article`
     font-size: 2rem;
     margin-bottom: 50px;
   }
+  @media (max-width: 800px) {
+    padding: 10px 30px;
+    flex-direction: column;
+  }
 `;
 export const StRecentWorksJobListItem = styled.section<{reversed?: boolean}>`
   width: 100%;
   padding: 20px 100px;
+  gap: 40px;
   display: flex;
   flex-direction: ${(props) => (props.reversed ? `row-reverse` : `row`)};
   align-items: center;
-  gap: 40px;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    gap: 20px;
+    padding: 0;
+    padding-bottom: 40px;
+    flex-direction: column;
+  }
 `;
 export const StRecentWorksJobListItemImg = styled.div`
   width: 500px;
@@ -118,6 +155,13 @@ export const StRecentWorksJobListItemImg = styled.div`
     object-fit: cover;
     z-index: 1;
     border: 1px solid white;
+  }
+  @media (max-width: 800px) {
+    width: 100%;
+    & img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 `;
 export const StRecentWorksJobListItemDetail = styled.aside<{
@@ -153,6 +197,16 @@ export const StRecentWorksJobListItemDetail = styled.aside<{
       background-color: #4e4cd5;
     }
   }
+
+  @media (max-width: 800px) {
+    align-items: flex-start;
+    & > p {
+      text-align: left;
+    }
+    & header {
+      align-items: flex-start;
+    }
+  }
 `;
 
 export const StRecentWorksNewsLetter = styled.div`
@@ -169,6 +223,13 @@ export const StRecentWorksNewsLetter = styled.div`
   }
   & p {
     margin: 40px auto;
+  }
+  @media (max-width: 800px) {
+    width: 100%;
+    margin: 60px 0;
+    & h1 {
+      font-size: 5vmax;
+    }
   }
 `;
 
@@ -191,5 +252,9 @@ export const StRecentWorksNewsLetterInput = styled.div`
     :hover {
       border-bottom: 2px solid #4e4cd5;
     }
+  }
+  @media (max-width: 800px) {
+    width: 100%;
+    flex-direction: column;
   }
 `;

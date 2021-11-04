@@ -1,8 +1,6 @@
 import React from "react";
 import wwd from "../../assets/WWD.svg";
-import {MdMobileScreenShare} from "react-icons/md";
-import {CgWebsite} from "react-icons/cg";
-import {IoLogoAppleAr} from "react-icons/io5";
+import {EXPERTISE_LIST} from "../../data/data";
 
 import {
   StExpertiseContainer,
@@ -21,38 +19,15 @@ const Expertise = () => {
         </h1>
       </StExpertiseHeadLine>
       <StExpertiseContent>
-        <StExpertiseContentItem>
-          <header>
-            <CgWebsite />
-            <h1>websites</h1>
-          </header>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-            dolore nisi optio ipsum rerum. Vel neque aut consequuntur voluptas
-            temporibus. Tempora, quas aperiam?
-          </p>
-        </StExpertiseContentItem>
-        <StExpertiseContentItem>
-          <header>
-            <MdMobileScreenShare />
-            <h1>Mobiles</h1>
-          </header>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nisi
-            magnam quis ea nesciunt. Libero, in.
-          </p>
-        </StExpertiseContentItem>
-        <StExpertiseContentItem>
-          <header>
-            <IoLogoAppleAr />
-            <h1>Branding</h1>
-          </header>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-            inventore vero iusto laborum id distinctio mollitia similique animi
-            repellat nemo.
-          </p>
-        </StExpertiseContentItem>
+        {EXPERTISE_LIST.map(({title, icon, id, description}) => (
+          <StExpertiseContentItem key={id}>
+            <header>
+              {icon}
+              <h1>{title}</h1>
+            </header>
+            <p>{description}</p>
+          </StExpertiseContentItem>
+        ))}
       </StExpertiseContent>
     </StExpertiseContainer>
   );
