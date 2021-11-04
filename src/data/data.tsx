@@ -19,14 +19,14 @@ export const HEADLINE_LIST = [
   },
   {
     id: 2,
-    title: "Web Development",
+    title: "Web Dev",
     icon: <BsWindowSidebar />,
     discretion:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, adipisicing elit. Ratione,",
   },
   {
     id: 3,
-    title: "Mobile Development",
+    title: "Mobile Dev",
     icon: <MdMobileScreenShare />,
     discretion:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, adipisicing elit. Ratione,",

@@ -65,6 +65,7 @@ export const StRecentWorksOptions = styled.ul`
 `;
 export const StRecentWorksOptionsItem = styled.li`
   width: 300px;
+  height: 200px;
   padding: 20px;
   padding-top: 40px;
   position: relative;
@@ -81,7 +82,7 @@ export const StRecentWorksOptionsItem = styled.li`
     box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.4);
   }
   & h1 {
-    font-size: 1.7vmax;
+    font-size: 1.4rem;
     margin: 10px 0;
   }
   & p {
@@ -98,7 +99,7 @@ export const StRecentWorksOptionsItemIcon = styled.div`
   top: 0;
   left: 50%;
   padding: 10px;
-  font-size: 3.5vmax;
+  font-size: 2.4rem;
   border-radius: 50%;
   color: #fff;
   display: block;
@@ -109,7 +110,6 @@ export const StRecentWorksOptionsItemIcon = styled.div`
   @media (max-width: 800px) {
     top: -10%;
     margin: 20px auto;
-    font-size: 2.4rem;
   }
 `;
 
@@ -123,7 +123,7 @@ export const StRecentWorksJobList = styled.article`
   align-items: center;
   justify-content: flex-start;
   & > h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 50px;
   }
   @media (max-width: 800px) {
@@ -153,8 +153,8 @@ export const StRecentWorksJobListItemImg = styled.div`
     width: 500px;
     height: 300px;
     object-fit: cover;
-    z-index: 1;
-    border: 1px solid white;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
   }
   @media (max-width: 800px) {
     width: 100%;
@@ -186,9 +186,9 @@ export const StRecentWorksJobListItemDetail = styled.aside<{
     justify-content: center;
     align-items: ${(props) => (props.reversed ? `flex-end` : `flex-start`)};
     & span {
-      width: 25px;
-      height: 25px;
-      line-height: 25px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
       margin-bottom: 20px;
       display: block;
       text-align: center;
@@ -242,12 +242,12 @@ export const StRecentWorksNewsLetterInput = styled.div`
   gap: 10px;
   & input {
     width: 100%;
-    height: 100%;
+    height: 70px;
     padding: 5px 10px;
-    border: 1px solid #aaa;
-    border-bottom: 2px solid #aaa;
     border-radius: 5px;
     font-size: 1.2rem;
+    border-bottom: 2px solid #aaa;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
     :focus,
     :hover {
       border-bottom: 2px solid #4e4cd5;

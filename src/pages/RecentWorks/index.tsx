@@ -72,7 +72,10 @@ const RecentWorks = () => {
             Accusantium amet quis quae.
           </p>
           <StRecentWorksNewsLetterInput>
-            <input placeholder="Email" /> <Button>Subscribe</Button>
+            <input placeholder="Email" />
+            <Button width="200px" height="70px">
+              Subscribe
+            </Button>
           </StRecentWorksNewsLetterInput>
         </StRecentWorksNewsLetter>
       </StRecentWorksJobList>

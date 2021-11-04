@@ -79,9 +79,9 @@ export const StNavbarSlide = styled.ul<{isOpen: boolean}>`
     width: 100%;
     margin: 0 auto;
     position: absolute;
-    font-size: 1.4vmax;
-    bottom: 10vh;
-    left: 5vw;
+    font-size: 12px;
+    bottom: 2vh;
+    left: 25%;
     letter-spacing: 1px;
   }
   & a {
@@ -99,7 +99,7 @@ export const StNavbarSlide = styled.ul<{isOpen: boolean}>`
 `;
 
 export const StNavbarSlideItem = styled.li`
-  width: 300px;
+  width: 350px;
   min-height: 60px;
   margin: 20px auto;
   cursor: pointer;
@@ -116,8 +116,9 @@ export const StNavbarSlideItem = styled.li`
 `;
 
 export const StNavbarBlur = styled.nav`
-  width: 100vw;
+  width: 110vw;
   min-height: 100vh;
+  margin-left: -10vw;
   position: absolute;
   top: 0;
   left: 0;

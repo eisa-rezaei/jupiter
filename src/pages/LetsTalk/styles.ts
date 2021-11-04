@@ -65,6 +65,7 @@ export const StLetsTalkInputs = styled.div`
   }
 `;
 export const StLetsTalkInputsFirstLastName = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
