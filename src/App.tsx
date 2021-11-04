@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Suspense} from "react";
+import {HashRouter as Router, Route, Switch} from "react-router-dom";
+import Home from "./pages/Home";
+import Layout from "./components/Layout";
+import Loading from "./pages/Loading";
+import Expertise from "./pages/Expertise";
+import RecentWorks from "./pages/RecentWorks";
+import LetsTalk from "./pages/LetsTalk";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback={<Loading />}>
+      <Router>
+        <Layout>
+          <Switch>
+            <Route path="/" children={<Home />} exact />
+            <Route path="/expertise" children={<Expertise />} exact />
+            <Route path="/recentworks" children={<RecentWorks />} exact />
+            <Route path="/letstalk" children={<LetsTalk />} exact />
+          </Switch>
+        </Layout>
+      </Router>
+    </Suspense>
   );
-}
+};
 
 export default App;
