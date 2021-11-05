@@ -17,7 +17,7 @@ export const StAppBtn = styled.button<{width?: string; height?: string}>`
   }
 
   @media (max-width: 800px) {
-    min-width: 300px;
+    min-width: 200px;
     margin-top: 30px;
     border-radius: 10px;
   }
