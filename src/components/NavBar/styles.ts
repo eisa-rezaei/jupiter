@@ -122,6 +122,9 @@ export const StNavbarSlideItem = styled.li`
   :hover {
     background-color: #8381f9;
   }
+  @media (max-width: 800px) {
+    width: 320px;
+  }
 `;
 
 export const StNavbarBlur = styled.nav`
