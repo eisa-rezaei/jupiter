@@ -17,7 +17,7 @@ const NavBar: React.FC = () => {
         <StNavbarBlur onClick={() => setIsNavSlideOpen(false)} />
       ) : null}
 
-      <h2>jupiter.</h2>
+      <Link to="/">jupiter.</Link>
       <StNavbarSlideToggleAnimation
         onClick={() => setIsNavSlideOpen(!isNavSlideOpen)}
       >

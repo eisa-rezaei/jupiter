@@ -7,7 +7,8 @@ export const StNavbarContainer = styled.nav`
   position: relative;
   align-items: center;
   justify-content: space-between;
-  & h2 {
+  & > a {
+    font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 500;
   }
