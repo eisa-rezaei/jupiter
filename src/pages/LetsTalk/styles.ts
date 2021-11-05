@@ -7,6 +7,9 @@ export const StLetsTalkContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 export const StLetsTalkPartsContainer = styled.article`
@@ -25,14 +28,20 @@ export const StLetsTalkPartsContainer = styled.article`
   }
   & span {
     width: 100%;
-    height: 60px;
-    font-size: 2rem;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    & svg {
+    & img {
+      width: 80px;
+      height: 80px;
       cursor: pointer;
     }
+  }
+  @media (max-width: 800px) {
+    width: 100%;
+    min-height: 500px;
+    padding: 4vh 6vw;
   }
 `;
 
@@ -57,6 +66,7 @@ export const StLetsTalkInputs = styled.div`
   }
 `;
 export const StLetsTalkInputsFirstLastName = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -107,4 +117,7 @@ export const StLetsTalkBgSVG = styled.div`
   right: 40px;
   z-index: 1;
   color: #f0f0f0;
+  @media (max-width: 800px) {
+    font-size: 8rem;
+  }
 `;

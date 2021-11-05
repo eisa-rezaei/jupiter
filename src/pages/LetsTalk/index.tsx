@@ -2,10 +2,11 @@ import React from "react";
 import Button from "../../components/Button";
 import {FiPhoneCall} from "react-icons/fi";
 import {HiOutlineLocationMarker} from "react-icons/hi";
-import {AiFillFacebook} from "react-icons/ai";
-import {FaTelegram} from "react-icons/fa";
-import {RiInstagramFill} from "react-icons/ri";
 import {IoChatbubblesOutline} from "react-icons/io5";
+
+import telegram from "../../assets/letsTalk/telegram.png";
+import instagram from "../../assets/letsTalk/instagram.png";
+import facebook from "../../assets/letsTalk/facebook.png";
 
 import {
   StLetsTalkBgSVG,
@@ -53,9 +54,9 @@ const LetsTalk = () => {
           </StLetsTalkCallInfoItem>
         </StLetsTalkCallInfo>
         <span>
-          <AiFillFacebook />
-          <FaTelegram />
-          <RiInstagramFill />
+          <img src={telegram} alt="telegram" />
+          <img src={instagram} alt="instagram" />
+          <img src={facebook} alt="facebook" />
         </span>
       </StLetsTalkPartsContainer>
     </StLetsTalkContainer>

@@ -25,4 +25,8 @@ export const StNavigationContainer = styled.nav<{selectedPath: number}>`
       border-left: 3px solid #5a56a3;
     }
   }
+
+  @media (max-width: 1150px) {
+    display: none;
+  }
 `;

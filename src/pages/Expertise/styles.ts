@@ -5,8 +5,8 @@ export const StExpertiseContainer = styled.article`
   padding: 0 8vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-items: center;
+  align-items: flex-start;
+  justify-items: flex-start;
 `;
 
 export const StExpertiseHeadLine = styled.section`
@@ -28,6 +28,17 @@ export const StExpertiseHeadLine = styled.section`
   & span {
     font-weight: 500;
   }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    & h1 {
+      font-size: 2.5rem;
+    }
+    & img {
+      width: 450px;
+      height: 350px;
+    }
+  }
 `;
 export const StExpertiseContent = styled.ul`
   width: 100%;
@@ -35,6 +46,9 @@ export const StExpertiseContent = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 export const StExpertiseContentItem = styled.li`
   width: 300px;
@@ -53,5 +67,9 @@ export const StExpertiseContentItem = styled.li`
       font-size: 3rem;
       margin-right: 20px;
     }
+  }
+  @media (max-width: 800px) {
+    width: 100%;
+    margin: 40px 0;
   }
 `;

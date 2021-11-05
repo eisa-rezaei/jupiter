@@ -7,9 +7,13 @@ export const StNavbarContainer = styled.nav`
   position: relative;
   align-items: center;
   justify-content: space-between;
-  & h2 {
+  & > a {
+    font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 500;
+  }
+  @media (max-width: 800px) {
+    min-height: 80px;
   }
 `;
 
@@ -65,37 +69,46 @@ export const StNavbarSlide = styled.ul<{isOpen: boolean}>`
   background-color: #4e4cd5;
   z-index: 3;
   & svg {
-    position: absolute;
     top: 0px;
     right: 0px;
     margin: 20px;
     font-size: 3rem;
     cursor: pointer;
+    position: absolute;
   }
   & footer {
     width: 100%;
     margin: 0 auto;
     position: absolute;
-    font-size: 1.4vmax;
-    bottom: 10vh;
-    left: 5vw;
+    font-size: 12px;
+    bottom: 2vh;
+    left: 25%;
     letter-spacing: 1px;
   }
   & a {
     align-self: center;
   }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    & footer {
+      left: 10px;
+      bottom: 5vh;
+      font-size: 0.8rem;
+    }
+  }
 `;
 
 export const StNavbarSlideItem = styled.li`
-  width: 300px;
+  width: 350px;
   min-height: 60px;
   margin: 20px auto;
   cursor: pointer;
   font-size: 1.2rem;
-  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
   transition: all 0.2s linear;
   background-color: #6361e8;
   :hover {
@@ -104,8 +117,9 @@ export const StNavbarSlideItem = styled.li`
 `;
 
 export const StNavbarBlur = styled.nav`
-  width: 100vw;
+  width: 110vw;
   min-height: 100vh;
+  margin-left: -10vw;
   position: absolute;
   top: 0;
   left: 0;
