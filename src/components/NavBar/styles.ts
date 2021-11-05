@@ -8,9 +8,10 @@ export const StNavbarContainer = styled.nav`
   align-items: center;
   justify-content: space-between;
   & > a {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-weight: 800;
     text-transform: uppercase;
-    font-weight: 500;
+    font-family: "Changa", sans-serif;
   }
   @media (max-width: 800px) {
     min-height: 80px;
@@ -52,7 +53,7 @@ export const StNavbarSlideToggleAnimation = styled.div`
   }
 `;
 
-export const StNavbarSlide = styled.ul<{isOpen: boolean}>`
+export const StNavbarSlide = styled.div<{isOpen: boolean}>`
   width: 40%;
   height: 100vh;
   top: 0px;
@@ -62,7 +63,7 @@ export const StNavbarSlide = styled.ul<{isOpen: boolean}>`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   transition: all 0.4s ease-in-out;
   transform: ${(props) =>
     props.isOpen ? `translateX(0)` : `translate(100%,0)`};
@@ -76,27 +77,33 @@ export const StNavbarSlide = styled.ul<{isOpen: boolean}>`
     cursor: pointer;
     position: absolute;
   }
-  & footer {
-    width: 100%;
-    margin: 0 auto;
-    position: absolute;
-    font-size: 12px;
-    bottom: 2vh;
-    left: 25%;
-    letter-spacing: 1px;
-  }
   & a {
     align-self: center;
   }
-
   @media (max-width: 800px) {
     width: 100%;
-    & footer {
-      left: 10px;
-      bottom: 5vh;
-      font-size: 0.8rem;
-    }
   }
+`;
+
+export const StNavbarSlideFooter = styled.footer`
+  width: 100%;
+  left: 0;
+  bottom: 15px;
+  position: absolute;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  @media (max-width: 800px) {
+    left: 0px;
+    bottom: 5vh;
+  }
+`;
+
+export const StNavbarSlideLinks = styled.ul`
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const StNavbarSlideItem = styled.li`
@@ -111,6 +118,7 @@ export const StNavbarSlideItem = styled.li`
   text-transform: uppercase;
   transition: all 0.2s linear;
   background-color: #6361e8;
+  border-radius: 5px;
   :hover {
     background-color: #8381f9;
   }

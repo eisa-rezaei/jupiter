@@ -26,8 +26,10 @@ padding: 0;
 box-sizing: border-box;
 }
 body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-user-select: none;
+    user-select: none;
+    font-family: "Changa", sans-serif;
+    line-height: 1;
+
 
 }
 li{
@@ -40,9 +42,13 @@ a {
 input{
     outline: none;
     border: none;
+    font-family: "Changa", sans-serif;
+    line-height: 1;
 }
 button {
     background-color: inherit;
     border: none;
+    font-family: "Changa", sans-serif;
+    line-height: 1;
 }
 `;

@@ -26,13 +26,13 @@ const RecentWorks = () => {
     <StRecentWorksContainer>
       <StRecentWorksHeadLine>
         <StRecentWorksHeadLineText>
-          <p>Tagline</p>
-          <h1>Heading</h1>
+          <p>Programmers</p>
+          <h1>Jupiter</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium nam repudiandae nihil alias totam eos laboriosam! Et
-            ratione rem dolores repellendus neque vero dignissimos nulla dolore
-            error minus, tempore impedit!
+            I'm baby lo-fi before they sold out small batch drinking vinegar
+            keytar gentrify waistcoat dreamcatcher meh woke coloring book
+            semiotics poke 3 wolf moon. Brooklyn edison bulb ugh glossier.
+            Keffiyeh marfa paleo, next level hashtag
           </p>
         </StRecentWorksHeadLineText>
         <img src={RecentImg} alt="Recent Works" />
@@ -66,16 +66,15 @@ const RecentWorks = () => {
         <StRecentWorksNewsLetter>
           <h1>NewsLetter</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
-            odit perferendis quasi error, similique cum iure rerum ipsa, dicta
-            provident temporibus blanditiis incidunt magnam dolores saepe?
-            Accusantium amet quis quae.
+            I'm baby lo-fi before they sold out small batch drinking vinegar
+            keytar gentrify waistcoat dreamcatcher meh woke coloring book
+            semiotics poke 3 wolf moon. Brooklyn edison bulb ugh glossier.
+            Keffiyeh marfa paleo, next level hashtag taiyaki portland. Echo park
+            biodiesel
           </p>
           <StRecentWorksNewsLetterInput>
             <input placeholder="Email" />
-            <Button width="200px" height="70px">
-              Subscribe
-            </Button>
+            <Button height="70px">Subscribe</Button>
           </StRecentWorksNewsLetterInput>
         </StRecentWorksNewsLetter>
       </StRecentWorksJobList>

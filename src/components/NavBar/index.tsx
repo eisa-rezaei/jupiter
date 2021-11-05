@@ -5,7 +5,9 @@ import {
   StNavbarBlur,
   StNavbarContainer,
   StNavbarSlide,
+  StNavbarSlideFooter,
   StNavbarSlideItem,
+  StNavbarSlideLinks,
   StNavbarSlideToggleAnimation,
 } from "./styles";
 
@@ -37,14 +39,16 @@ const NavBar = () => {
       </StNavbarSlideToggleAnimation>
       <StNavbarSlide isOpen={isNavSlideOpen}>
         <IoIosClose onClick={sliderCloseHandler} />
-        {NAVBAR_LIST.map(({title, path}) => (
-          <Link to={path} onClick={sliderCloseHandler}>
-            <StNavbarSlideItem>{title}</StNavbarSlideItem>
-          </Link>
-        ))}
-        <footer>
+        <StNavbarSlideLinks>
+          {NAVBAR_LIST.map(({title, path}) => (
+            <Link to={path} onClick={sliderCloseHandler}>
+              <StNavbarSlideItem>{title}</StNavbarSlideItem>
+            </Link>
+          ))}
+        </StNavbarSlideLinks>
+        <StNavbarSlideFooter>
           Jesus Razor &copy; {new Date().getFullYear()} All Rights Are reserved{" "}
-        </footer>
+        </StNavbarSlideFooter>
       </StNavbarSlide>
     </StNavbarContainer>
   );

@@ -72,6 +72,7 @@ export const StRecentWorksOptionsItem = styled.li`
   text-align: center;
   border: 2px solid #fff;
   border-left: none;
+  border-top: none;
   transition: all 0.3s linear;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -79,6 +80,7 @@ export const StRecentWorksOptionsItem = styled.li`
   :hover {
     border: 2px solid #4e4cd5;
     border-left: none;
+    border-top: none;
     box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.3);
     & > div {
       top: -5px;
@@ -226,6 +228,7 @@ export const StRecentWorksNewsLetter = styled.div`
   }
   & p {
     margin: 40px auto;
+    text-align: center;
   }
   @media (max-width: 800px) {
     width: 100%;
@@ -247,7 +250,7 @@ export const StRecentWorksNewsLetterInput = styled.div`
     width: 100%;
     height: 70px;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1.2rem;
     border-bottom: 2px solid #aaa;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
