@@ -47,7 +47,7 @@ export const RECENT_WORKS_LIST = [
     title: "Headphone Market",
     tags: "Tags",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariaturdignissimos saepe explicabo aliquam tempore perferendisreiciendis! Placeat fuga autem repellendus. reiciendis! Placeatfuga autem repellendus. Lorem ipsum dolor sit amet.",
+      "Headphone Application demo here find adipisicing elit. Pariaturdignissimos saepe explicabo aliquam tempore perferendisreiciendis! Placeat fuga autem repellendus. reiciendis! Placeatfuga autem repellendus. Lorem ipsum dolor sit amet.",
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ export const RECENT_WORKS_LIST = [
     title: "Flow App Landing",
     tags: "Tags",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariaturdignissimos saepe explicabo aliquam tempore perferendisreiciendis! Placeat fuga autem repellendus. reiciendis! Placeatfuga autem repellendus. Lorem ipsum dolor sit amet.",
+      "Flow Application demo here find adipisicing elit Pariaturdignissimos saepe explicabo aliquam tempore perferendisreiciendis! Placeat fuga autem repellendus. reiciendis! Placeatfuga autem repellendus. Lorem ipsum dolor sit amet.",
   },
   {
     id: 3,
@@ -63,7 +63,7 @@ export const RECENT_WORKS_LIST = [
     title: "Foxxy App Landing",
     tags: "Tags",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariaturdignissimos saepe explicabo aliquam tempore perferendisreiciendis! Placeat fuga autem repellendus. reiciendis! Placeatfuga autem repellendus. Lorem ipsum dolor sit amet.",
+      "Foxxy Application demo here find adipisicing elit. Pariaturdignissimos saepe explicabo aliquam tempore perferendisreiciendis! Placeat fuga autem repellendus. reiciendis! Placeatfuga autem repellendus. Lorem ipsum dolor sit amet.",
   },
   {
     id: 4,
@@ -71,7 +71,7 @@ export const RECENT_WORKS_LIST = [
     title: "Instagram",
     tags: "Tags",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariaturdignissimos saepe explicabo aliquam tempore perferendisreiciendis! Placeat fuga autem repellendus. reiciendis! Placeatfuga autem repellendus. Lorem ipsum dolor sit amet.",
+      "Instagram Application demo here find tempore perferendisreiciendis! Placeat fuga autem repellendus. reiciendis! Placeatfuga autem repellendus. Lorem ipsum dolor sit amet.",
   },
 ];
 
