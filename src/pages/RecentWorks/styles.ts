@@ -64,7 +64,7 @@ export const StRecentWorksOptions = styled.ul`
   }
 `;
 export const StRecentWorksOptionsItem = styled.li`
-  width: 300px;
+  width: 280px;
   height: 200px;
   padding: 20px;
   padding-top: 40px;
@@ -73,13 +73,16 @@ export const StRecentWorksOptionsItem = styled.li`
   border: 2px solid #fff;
   border-left: none;
   transition: all 0.3s linear;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   cursor: pointer;
   :hover {
     border: 2px solid #4e4cd5;
     border-left: none;
-    box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.3);
+    & > div {
+      top: -5px;
+    }
   }
   & h1 {
     font-size: 1.4rem;

@@ -26,7 +26,7 @@ export const StNavigationContainer = styled.nav<{selectedPath: number}>`
     }
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1150px) {
     display: none;
   }
 `;

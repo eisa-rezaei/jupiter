@@ -14,7 +14,7 @@ export const StHomeContent = styled.section`
 
 export const StHomeContentText = styled.article`
   width: 45%;
-  padding: 10vh 8vw;
+  padding: 10vh 4.5vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
