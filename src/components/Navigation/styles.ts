@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StNavigationContainer = styled.nav<{selectedPath: number}>`
+export const StNavigationContainer = styled.nav`
   min-width: 3vw;
   min-height: 100vh;
   transform: rotate(180deg);
@@ -21,9 +21,9 @@ export const StNavigationContainer = styled.nav<{selectedPath: number}>`
     :hover {
       border-left: 3px solid #5a56a3;
     }
-    :nth-child(${(props) => props.selectedPath}) {
-      border-left: 3px solid #5a56a3;
-    }
+  }
+  .active {
+    border-left: 3px solid #5a56a3;
   }
 
   @media (max-width: 1150px) {
