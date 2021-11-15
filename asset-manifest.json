@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.ef164807.chunk.js",
-    "main.js.map": "/static/js/main.ef164807.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.406dd86f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.406dd86f.js.map",
-    "static/js/2.217b4fb0.chunk.js": "/static/js/2.217b4fb0.chunk.js",
-    "static/js/2.217b4fb0.chunk.js.map": "/static/js/2.217b4fb0.chunk.js.map",
+    "main.js": "/static/js/main.fef310ee.chunk.js",
+    "main.js.map": "/static/js/main.fef310ee.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.259037b0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.259037b0.js.map",
+    "static/js/2.5965360e.chunk.js": "/static/js/2.5965360e.chunk.js",
+    "static/js/2.5965360e.chunk.js.map": "/static/js/2.5965360e.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.217b4fb0.chunk.js.LICENSE.txt": "/static/js/2.217b4fb0.chunk.js.LICENSE.txt",
+    "service-worker.js": "/service-worker.js",
+    "service-worker.js.map": "/service-worker.js.map",
+    "static/js/2.5965360e.chunk.js.LICENSE.txt": "/static/js/2.5965360e.chunk.js.LICENSE.txt",
     "static/media/Home-1.eff3e7b5.svg": "/static/media/Home-1.eff3e7b5.svg",
     "static/media/Recent1.5617a96c.svg": "/static/media/Recent1.5617a96c.svg",
     "static/media/WWD.8506f8a2.svg": "/static/media/WWD.8506f8a2.svg",
@@ -18,8 +20,8 @@
     "static/media/instagram.254607ef.webp": "/static/media/instagram.254607ef.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.406dd86f.js",
-    "static/js/2.217b4fb0.chunk.js",
-    "static/js/main.ef164807.chunk.js"
+    "static/js/runtime-main.259037b0.js",
+    "static/js/2.5965360e.chunk.js",
+    "static/js/main.fef310ee.chunk.js"
   ]
 }
