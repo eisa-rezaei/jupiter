@@ -1,22 +1,21 @@
-import React from "react";
-import {Link, useLocation} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {StNavigationContainer} from "./styles";
 
 const Navigation = () => {
-  const {pathname} = useLocation();
-
-  const selectedPath: Record<string, number> = {
-    "/": 1,
-    "/expertise": 2,
-    "/recentworks": 3,
-    "/letstalk": 4,
-  };
   return (
-    <StNavigationContainer selectedPath={selectedPath[pathname]}>
-      <Link to="/">Intro</Link>
-      <Link to="/expertise">Expertise</Link>
-      <Link to="/recentworks">Recent Works</Link>
-      <Link to="/letstalk">Lets talk</Link>
+    <StNavigationContainer>
+      <NavLink to="/" activeClassName="active" exact>
+        Intro
+      </NavLink>
+      <NavLink to="/expertise" activeClassName="active">
+        Expertise
+      </NavLink>
+      <NavLink to="/recentworks" activeClassName="active">
+        Recent Works
+      </NavLink>
+      <NavLink to="/letstalk" activeClassName="active">
+        Lets talk
+      </NavLink>
     </StNavigationContainer>
   );
 };

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import {IoIosClose} from "react-icons/io";
 import {Link} from "react-router-dom";
 import {
@@ -40,14 +40,14 @@ const NavBar = () => {
       <StNavbarSlide isOpen={isNavSlideOpen}>
         <IoIosClose onClick={sliderCloseHandler} />
         <StNavbarSlideLinks>
-          {NAVBAR_LIST.map(({title, path}) => (
-            <Link to={path} onClick={sliderCloseHandler}>
+          {NAVBAR_LIST.map(({title, path}, index) => (
+            <Link to={path} onClick={sliderCloseHandler} key={index}>
               <StNavbarSlideItem>{title}</StNavbarSlideItem>
             </Link>
           ))}
         </StNavbarSlideLinks>
         <StNavbarSlideFooter>
-          Jesus Razor &copy; {new Date().getFullYear()} All Rights Are reserved{" "}
+          Jesus Razor &copy; {new Date().getFullYear()} All Rights Are reserved
         </StNavbarSlideFooter>
       </StNavbarSlide>
     </StNavbarContainer>
